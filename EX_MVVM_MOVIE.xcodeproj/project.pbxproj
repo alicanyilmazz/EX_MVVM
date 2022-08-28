@@ -15,10 +15,15 @@
 		1A05955828BA10C40044A2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05955628BA10C40044A2A3 /* LaunchScreen.storyboard */; };
 		1A05956328BA11D70044A2A3 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956228BA11D70044A2A3 /* Anchor.swift */; };
 		1A05956628BA19580044A2A3 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956528BA19580044A2A3 /* DataGenerator.swift */; };
+		1A05956828BB87F90044A2A3 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956728BB87F90044A2A3 /* CryptoCell.swift */; };
+		1A05956E28BB94080044A2A3 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956D28BB94080044A2A3 /* CryptoCurrency.swift */; };
+		1A05957028BB94EF0044A2A3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956F28BB94EF0044A2A3 /* Service.swift */; };
+		1A05957228BB9B400044A2A3 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05957128BB9B400044A2A3 /* CryptoViewModel.swift */; };
+		1A05957528BBB6EF0044A2A3 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05957428BBB6EF0044A2A3 /* ClientService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A05954828BA10C30044A2A3 /* EX_MVVM_CRYPTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX_MVVM_CRYPTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A05954828BA10C30044A2A3 /* EX_MVVM_MOVIE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX_MVVM_MOVIE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A05954B28BA10C30044A2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A05954D28BA10C30044A2A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A05954F28BA10C30044A2A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,11 @@
 		1A05955928BA10C40044A2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A05956228BA11D70044A2A3 /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
 		1A05956528BA19580044A2A3 /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		1A05956728BB87F90044A2A3 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		1A05956D28BB94080044A2A3 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		1A05956F28BB94EF0044A2A3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1A05957128BB9B400044A2A3 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		1A05957428BBB6EF0044A2A3 /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +54,7 @@
 		1A05953F28BA10C30044A2A3 = {
 			isa = PBXGroup;
 			children = (
-				1A05954A28BA10C30044A2A3 /* EX_MVVM_CRYPTO */,
+				1A05954A28BA10C30044A2A3 /* EX_MVVM_MOVIE */,
 				1A05954928BA10C30044A2A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,24 +62,26 @@
 		1A05954928BA10C30044A2A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A05954828BA10C30044A2A3 /* EX_MVVM_CRYPTO.app */,
+				1A05954828BA10C30044A2A3 /* EX_MVVM_MOVIE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A05954A28BA10C30044A2A3 /* EX_MVVM_CRYPTO */ = {
+		1A05954A28BA10C30044A2A3 /* EX_MVVM_MOVIE */ = {
 			isa = PBXGroup;
 			children = (
+				1A05957328BBB6DF0044A2A3 /* Network */,
+				1A05956C28BB93AF0044A2A3 /* Service */,
+				1A05956B28BB93820044A2A3 /* View */,
+				1A05956A28BB93730044A2A3 /* ViewModel */,
+				1A05956928BB936A0044A2A3 /* Model */,
 				1A05955F28BA11860044A2A3 /* Core */,
-				1A05954B28BA10C30044A2A3 /* AppDelegate.swift */,
-				1A05954D28BA10C30044A2A3 /* SceneDelegate.swift */,
-				1A05954F28BA10C30044A2A3 /* ViewController.swift */,
 				1A05955128BA10C30044A2A3 /* Main.storyboard */,
 				1A05955428BA10C40044A2A3 /* Assets.xcassets */,
 				1A05955628BA10C40044A2A3 /* LaunchScreen.storyboard */,
 				1A05955928BA10C40044A2A3 /* Info.plist */,
 			);
-			path = EX_MVVM_CRYPTO;
+			path = EX_MVVM_MOVIE;
 			sourceTree = "<group>";
 		};
 		1A05955F28BA11860044A2A3 /* Core */ = {
@@ -97,12 +109,55 @@
 			path = DataGenerator;
 			sourceTree = "<group>";
 		};
+		1A05956928BB936A0044A2A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A05956D28BB94080044A2A3 /* CryptoCurrency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A05956A28BB93730044A2A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A05957128BB9B400044A2A3 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A05956B28BB93820044A2A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A05954B28BA10C30044A2A3 /* AppDelegate.swift */,
+				1A05954D28BA10C30044A2A3 /* SceneDelegate.swift */,
+				1A05954F28BA10C30044A2A3 /* ViewController.swift */,
+				1A05956728BB87F90044A2A3 /* CryptoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A05956C28BB93AF0044A2A3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1A05956F28BB94EF0044A2A3 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1A05957328BBB6DF0044A2A3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1A05957428BBB6EF0044A2A3 /* ClientService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A05954728BA10C30044A2A3 /* EX_MVVM_CRYPTO */ = {
+		1A05954728BA10C30044A2A3 /* EX_MVVM_MOVIE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM_CRYPTO" */;
+			buildConfigurationList = 1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM_MOVIE" */;
 			buildPhases = (
 				1A05954428BA10C30044A2A3 /* Sources */,
 				1A05954528BA10C30044A2A3 /* Frameworks */,
@@ -112,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = EX_MVVM_CRYPTO;
+			name = EX_MVVM_MOVIE;
 			productName = EX_MVVM_CRYPTO;
-			productReference = 1A05954828BA10C30044A2A3 /* EX_MVVM_CRYPTO.app */;
+			productReference = 1A05954828BA10C30044A2A3 /* EX_MVVM_MOVIE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM_CRYPTO" */;
+			buildConfigurationList = 1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM_MOVIE" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A05954728BA10C30044A2A3 /* EX_MVVM_CRYPTO */,
+				1A05954728BA10C30044A2A3 /* EX_MVVM_MOVIE */,
 			);
 		};
 /* End PBXProject section */
@@ -169,7 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A05955028BA10C30044A2A3 /* ViewController.swift in Sources */,
+				1A05957028BB94EF0044A2A3 /* Service.swift in Sources */,
 				1A05954C28BA10C30044A2A3 /* AppDelegate.swift in Sources */,
+				1A05956828BB87F90044A2A3 /* CryptoCell.swift in Sources */,
+				1A05957528BBB6EF0044A2A3 /* ClientService.swift in Sources */,
+				1A05956E28BB94080044A2A3 /* CryptoCurrency.swift in Sources */,
+				1A05957228BB9B400044A2A3 /* CryptoViewModel.swift in Sources */,
 				1A05956328BA11D70044A2A3 /* Anchor.swift in Sources */,
 				1A05954E28BA10C30044A2A3 /* SceneDelegate.swift in Sources */,
 				1A05956628BA19580044A2A3 /* DataGenerator.swift in Sources */,
@@ -321,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W73RSNM5TG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EX_MVVM_CRYPTO/Info.plist;
+				INFOPLIST_FILE = EX_MVVM_MOVIE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +392,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM-CRYPTO";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM-MOVIE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W73RSNM5TG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EX_MVVM_CRYPTO/Info.plist;
+				INFOPLIST_FILE = EX_MVVM_MOVIE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM-CRYPTO";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM-MOVIE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -371,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM_CRYPTO" */ = {
+		1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM_MOVIE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A05955A28BA10C40044A2A3 /* Debug */,
@@ -380,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM_CRYPTO" */ = {
+		1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM_MOVIE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A05955D28BA10C40044A2A3 /* Debug */,

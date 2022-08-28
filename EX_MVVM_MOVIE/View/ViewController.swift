@@ -7,14 +7,16 @@
 
 import UIKit
 
-private let reuseIdentifier = "ConversationCell"
+private let reuseIdentifier = "CryptoCell"
 
 class ViewController: UIViewController {
     
     private let tableView = UITableView()
+    private var cryptoListViewModel : CryptoListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getData()
         configureUI()
     }
     
@@ -27,27 +29,50 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .white
-        tableView.rowHeight = 40
+        tableView.rowHeight = 50
         tableView.separatorStyle = .singleLine
         tableView.allowsSelection = true
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+        tableView.register(CryptoCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.tableFooterView = UIView()
         view.addSubview(tableView)
         tableView.frame = view.frame
+    }
+    
+    fileprivate func getData() {
+        let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!
+        Service().downloadCurrencies(url: url) { cryptos in
+            if let cryptos = cryptos {
+                self.cryptoListViewModel = CryptoListViewModel(cryptoCurrencyList: cryptos)
+                DispatchQueue.main.async{
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
 }
 
 // MARK : UITableViewDataSource
 
 extension ViewController : UITableViewDataSource{
+    /*
     func numberOfSections(in tableView: UITableView) -> Int {
         return Book.sections.count
     }
+    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Book.booksFor(section: section).count
+        return self.cryptoListViewModel == nil ? 0 : self.cryptoListViewModel.numberOfRowsInSection()
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CryptoCell
+        let cryptoViewModel = self.cryptoListViewModel.cryptoAtIndex(indexPath.row)
+        cell.cryptoName.text = cryptoViewModel.name
+        cell.cryptoValue.text = cryptoViewModel.price
+        return cell
+    }
+    
+    /*  This is new version of cellForRowAt
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -61,6 +86,7 @@ extension ViewController : UITableViewDataSource{
                 cell.contentConfiguration = content
                 return cell
     }
+    */
 }
 
 

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/alicanyilmaz/XCodeProjects/EX_MVVM_CRYPTO/EX_MVVM_MOVIE.xcodeproj">
    </FileRef>
 </Workspace>
