@@ -10,7 +10,6 @@
 		1A05954C28BA10C30044A2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05954B28BA10C30044A2A3 /* AppDelegate.swift */; };
 		1A05954E28BA10C30044A2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05954D28BA10C30044A2A3 /* SceneDelegate.swift */; };
 		1A05955028BA10C30044A2A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05954F28BA10C30044A2A3 /* ViewController.swift */; };
-		1A05955328BA10C30044A2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05955128BA10C30044A2A3 /* Main.storyboard */; };
 		1A05955528BA10C40044A2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A05955428BA10C40044A2A3 /* Assets.xcassets */; };
 		1A05955828BA10C40044A2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05955628BA10C40044A2A3 /* LaunchScreen.storyboard */; };
 		1A05956328BA11D70044A2A3 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956228BA11D70044A2A3 /* Anchor.swift */; };
@@ -20,14 +19,18 @@
 		1A05957028BB94EF0044A2A3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05956F28BB94EF0044A2A3 /* Service.swift */; };
 		1A05957228BB9B400044A2A3 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05957128BB9B400044A2A3 /* CryptoViewModel.swift */; };
 		1A05957528BBB6EF0044A2A3 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05957428BBB6EF0044A2A3 /* ClientService.swift */; };
+		1A677FCA28BDE5EF00EA0BD1 /* MusicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A677FC928BDE5EF00EA0BD1 /* MusicDTO.swift */; };
+		1A677FCC28BDE69C00EA0BD1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A677FCB28BDE69C00EA0BD1 /* NetworkService.swift */; };
+		1A677FCE28BE345700EA0BD1 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A677FCD28BE345700EA0BD1 /* AppRouter.swift */; };
+		1A677FD028BE348E00EA0BD1 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A677FCF28BE348E00EA0BD1 /* AppContainer.swift */; };
+		1A677FD228BE357300EA0BD1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A677FD128BE357300EA0BD1 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A05954828BA10C30044A2A3 /* EX_MVVM_MOVIE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX_MVVM_MOVIE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A05954828BA10C30044A2A3 /* EX_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EX_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A05954B28BA10C30044A2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A05954D28BA10C30044A2A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A05954F28BA10C30044A2A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A05955228BA10C30044A2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A05955428BA10C40044A2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A05955728BA10C40044A2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A05955928BA10C40044A2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		1A05956F28BB94EF0044A2A3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1A05957128BB9B400044A2A3 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		1A05957428BBB6EF0044A2A3 /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
+		1A677FC928BDE5EF00EA0BD1 /* MusicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDTO.swift; sourceTree = "<group>"; };
+		1A677FCB28BDE69C00EA0BD1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1A677FCD28BE345700EA0BD1 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		1A677FCF28BE348E00EA0BD1 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		1A677FD128BE357300EA0BD1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,7 @@
 		1A05953F28BA10C30044A2A3 = {
 			isa = PBXGroup;
 			children = (
-				1A05954A28BA10C30044A2A3 /* EX_MVVM_MOVIE */,
+				1A05954A28BA10C30044A2A3 /* EX_MVVM */,
 				1A05954928BA10C30044A2A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +70,12 @@
 		1A05954928BA10C30044A2A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A05954828BA10C30044A2A3 /* EX_MVVM_MOVIE.app */,
+				1A05954828BA10C30044A2A3 /* EX_MVVM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A05954A28BA10C30044A2A3 /* EX_MVVM_MOVIE */ = {
+		1A05954A28BA10C30044A2A3 /* EX_MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				1A05957328BBB6DF0044A2A3 /* Network */,
@@ -76,12 +84,14 @@
 				1A05956A28BB93730044A2A3 /* ViewModel */,
 				1A05956928BB936A0044A2A3 /* Model */,
 				1A05955F28BA11860044A2A3 /* Core */,
-				1A05955128BA10C30044A2A3 /* Main.storyboard */,
 				1A05955428BA10C40044A2A3 /* Assets.xcassets */,
 				1A05955628BA10C40044A2A3 /* LaunchScreen.storyboard */,
 				1A05955928BA10C40044A2A3 /* Info.plist */,
+				1A677FCD28BE345700EA0BD1 /* AppRouter.swift */,
+				1A677FCF28BE348E00EA0BD1 /* AppContainer.swift */,
+				1A677FD128BE357300EA0BD1 /* Router.swift */,
 			);
-			path = EX_MVVM_MOVIE;
+			path = EX_MVVM;
 			sourceTree = "<group>";
 		};
 		1A05955F28BA11860044A2A3 /* Core */ = {
@@ -148,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				1A05957428BBB6EF0044A2A3 /* ClientService.swift */,
+				1A677FC928BDE5EF00EA0BD1 /* MusicDTO.swift */,
+				1A677FCB28BDE69C00EA0BD1 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -155,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A05954728BA10C30044A2A3 /* EX_MVVM_MOVIE */ = {
+		1A05954728BA10C30044A2A3 /* EX_MVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM_MOVIE" */;
+			buildConfigurationList = 1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM" */;
 			buildPhases = (
 				1A05954428BA10C30044A2A3 /* Sources */,
 				1A05954528BA10C30044A2A3 /* Frameworks */,
@@ -167,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = EX_MVVM_MOVIE;
+			name = EX_MVVM;
 			productName = EX_MVVM_CRYPTO;
-			productReference = 1A05954828BA10C30044A2A3 /* EX_MVVM_MOVIE.app */;
+			productReference = 1A05954828BA10C30044A2A3 /* EX_MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM_MOVIE" */;
+			buildConfigurationList = 1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -200,7 +212,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A05954728BA10C30044A2A3 /* EX_MVVM_MOVIE */,
+				1A05954728BA10C30044A2A3 /* EX_MVVM */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +224,6 @@
 			files = (
 				1A05955828BA10C40044A2A3 /* LaunchScreen.storyboard in Resources */,
 				1A05955528BA10C40044A2A3 /* Assets.xcassets in Resources */,
-				1A05955328BA10C30044A2A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,27 +237,24 @@
 				1A05955028BA10C30044A2A3 /* ViewController.swift in Sources */,
 				1A05957028BB94EF0044A2A3 /* Service.swift in Sources */,
 				1A05954C28BA10C30044A2A3 /* AppDelegate.swift in Sources */,
+				1A677FCA28BDE5EF00EA0BD1 /* MusicDTO.swift in Sources */,
 				1A05956828BB87F90044A2A3 /* CryptoCell.swift in Sources */,
 				1A05957528BBB6EF0044A2A3 /* ClientService.swift in Sources */,
 				1A05956E28BB94080044A2A3 /* CryptoCurrency.swift in Sources */,
+				1A677FD228BE357300EA0BD1 /* Router.swift in Sources */,
 				1A05957228BB9B400044A2A3 /* CryptoViewModel.swift in Sources */,
 				1A05956328BA11D70044A2A3 /* Anchor.swift in Sources */,
 				1A05954E28BA10C30044A2A3 /* SceneDelegate.swift in Sources */,
+				1A677FCE28BE345700EA0BD1 /* AppRouter.swift in Sources */,
+				1A677FCC28BDE69C00EA0BD1 /* NetworkService.swift in Sources */,
 				1A05956628BA19580044A2A3 /* DataGenerator.swift in Sources */,
+				1A677FD028BE348E00EA0BD1 /* AppContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A05955128BA10C30044A2A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A05955228BA10C30044A2A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1A05955628BA10C40044A2A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -381,10 +389,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W73RSNM5TG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EX_MVVM_MOVIE/Info.plist;
+				INFOPLIST_FILE = EX_MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,7 +399,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM-MOVIE";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -409,10 +416,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W73RSNM5TG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EX_MVVM_MOVIE/Info.plist;
+				INFOPLIST_FILE = EX_MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -420,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM-MOVIE";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alicanyilmaz.EX-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -431,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM_MOVIE" */ = {
+		1A05954328BA10C30044A2A3 /* Build configuration list for PBXProject "EX_MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A05955A28BA10C40044A2A3 /* Debug */,
@@ -440,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM_MOVIE" */ = {
+		1A05955C28BA10C40044A2A3 /* Build configuration list for PBXNativeTarget "EX_MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A05955D28BA10C40044A2A3 /* Debug */,
